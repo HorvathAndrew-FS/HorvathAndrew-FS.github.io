@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Quicksand:wght@300;400;500&family=Roboto+Mono:wght@100;300;400;500&display=swap");
+@import url("https://use.typekit.net/iac0swk.css");
+@font-face {
+  font-family: "felt-tip-senior";
+  src: url("../scss/fonts/felt-tip/felt-tip-senior.woff2") format("woff2"), url("../scss/fonts/felt-tip/felt-tip-senior.woff") format("woff"), url("../scss/fonts/felt-tip/felt-tip-senior.ttf") format("truetype");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+a, p, button, div, span {
+  font-size: 1.5rem;
+  color: rgb(171, 188, 219);
+}
+
+h1 {
+  font-family: "felt-tip-senior", Caveat, sans-serif;
+  font-size: 6rem;
+  line-height: 0.7;
+  color: rgb(111, 190, 68);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(114, 162, 243);
+}
+
+h3 {
+  font-size: 2.25rem;
+  color: rgb(235, 235, 235);
+}
+h3::before {
+  font-weight: 500;
+  font-size: 2.15rem;
+  color: rgb(111, 190, 68);
+}
+
+p {
+  letter-spacing: 0.13rem;
+}
+
+.nav-primary-item a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav-primary-item a:hover {
+  color: rgb(247, 247, 247);
+}
+.nav-primary-item a::before {
+  color: rgb(111, 190, 68);
+  font-size: 1.5rem;
+}
+
+.nav-toggler-custom {
+  color: rgb(111, 190, 68);
+}
+
+.navbar-toggler-icon-custom {
+  font-size: 2.5rem;
+  color: rgb(111, 190, 68);
+}
+.navbar-toggler-icon-custom:hover {
+  color: rgb(247, 247, 247);
+}
+
+.btn-close-nav-secondary {
+  font-size: 2rem;
+  color: rgb(111, 190, 68);
+}
+.btn-close-nav-secondary:hover {
+  color: rgb(247, 247, 247);
+}
+
+.nav-item-custom a {
+  color: rgb(171, 188, 219);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.nav-item-custom a:hover {
+  color: rgb(247, 247, 247);
+}
+.nav-item-custom::before {
+  color: rgb(111, 190, 68);
+  font-size: 2rem;
+}
+
+.ah-p-main-greeting {
+  color: rgb(235, 235, 235);
+}
+
+.button-ah-text-front, .button-ah-text-back {
+  text-align: center;
+}
+
+.button-ah-text-front {
+  color: rgb(111, 190, 68);
+}
+
+.button-ah-text-back {
+  color: rgb(16, 31, 56);
+  text-decoration: none;
+}
+
+.section-about ul {
+  font-size: 1.3rem;
+}
+.section-about li i {
+  font-size: 1.2rem;
+  color: rgb(111, 190, 68);
+}
+
+header {
+  height: 8.5rem;
+}
+
+.ah-logo {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.nav-primary {
+  width: fit-content;
+  margin-right: 5%;
+  padding: 0.25rem;
+  gap: 2rem;
+}
+
+.nav-primary-item a::before {
+  content: "0" counter(link) ":";
+  counter-increment: link;
+  padding-right: 0.5rem;
+}
+
+.nav-bar-custom {
+  background-color: rgb(16, 31, 56);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  height: 8.5rem;
+  box-shadow: 0 8px 8px -4px rgb(0, 19, 51);
+  transition: all 0.4s;
+}
+.nav-bar-custom.is-hidden {
+  opacity: 0;
+  transform: translate(0, -60px);
+}
+.nav-bar-custom.is-visible {
+  opacity: 1;
+  translate: translate(0, 0);
+}
+
+.nav-secondary {
+  margin-right: 3%;
+}
+
+.nav-toggler-custom {
+  border: none;
+  padding: 0.5rem 1rem;
+  background: none;
+}
+
+.btn-close-nav-secondary {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  background: none;
+  border: none;
+  transition: rotate 0.5s;
+}
+.btn-close-nav-secondary:hover {
+  rotate: 90deg;
+}
+
+.offcanvas-body-custom {
+  background: rgb(27, 52, 95);
+  border: none;
+}
+.offcanvas-body-custom ol {
+  width: fit-content;
+}
+
+.nav-item-custom {
+  margin-bottom: 2rem;
+  list-style-type: none;
+  counter-increment: link;
+}
+.nav-item-custom::before {
+  content: "0" counter(link) ":";
+  margin-bottom: 2rem;
+}
+
+.section-main-landing {
+  max-height: 100vh;
+}
+.section-main-landing p:first-of-type {
+  margin: 0.5rem 0 2rem 0;
+}
+.section-main-landing h2 {
+  margin: 0 0 2.5rem 0;
+}
+
+.ah-h1-full-name {
+  margin: 0 0 1rem 0;
+}
+
+.button-ah-container {
+  background: rgb(16, 31, 56);
+  margin: 1rem 0 0 0;
+  width: 100%;
+  max-width: 250px;
+  padding: 0 0.5rem;
+}
+
+.button-ah-perspective {
+  width: 100%;
+  height: 6rem;
+  cursor: pointer;
+  perspective: 50rem;
+}
+
+.button-ah-side-2 {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.4s;
+}
+.button-ah-side-2:hover {
+  transform: rotateX(-90deg);
+}
+
+.button-ah-text-front, .button-ah-text-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 4px solid rgb(111, 190, 68);
+  border-radius: 0.5rem;
+  padding: 1.6rem 1rem 1rem 1rem;
+}
+
+.button-ah-text-front {
+  transform: translate3d(0, 0, 29px);
+}
+
+.button-ah-text-back {
+  background: rgb(111, 190, 68);
+  transform: rotateX(90deg) translate3d(0, 0, 29px);
+}
+
+.section-about ul {
+  list-style: none;
+  padding: 0;
+  margin: 0rem 0 3rem;
+}
+.section-about li {
+  padding: 0.25rem 0;
+}
+.section-about li i {
+  padding: 0 1.25rem 0 0;
+}
+
+/* colors */
+/* tab setting */
+/* breakpoints */
+/* selectors relative to radio inputs */
+.tabs {
+  padding: 1rem;
+  margin: 0 auto;
+  height: 30rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 0.5rem;
+  min-width: 28rem;
+}
+.tabs input[name=tab-control] {
+  display: none;
+}
+.tabs ul li label {
+  font-size: 3rem;
+}
+.tabs ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tabs ul li {
+  width: 25%;
+}
+.tabs ul li label {
+  transition: all 0.3s ease-in-out;
+  color: rgb(114, 162, 243);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.tabs ul li label i {
+  transition: all 0.2s ease-in-out;
+}
+.tabs ul li label .fa-microchip {
+  padding-top: 1.2rem;
+}
+.tabs ul li label:hover {
+  color: rgb(111, 190, 68);
+}
+.tabs ul li label:focus {
+  outline: none;
+}
+.tabs .slider {
+  position: relative;
+  width: 25%;
+  transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+}
+.tabs .slider .indicator {
+  position: relative;
+  width: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background: red;
+  border-radius: 1px;
+}
+.tabs .content article {
+  display: none;
+  animation-name: content;
+  animation-direction: normal;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.tabs .content article h4 {
+  color: #428BFF;
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ ul > li:nth-child(1) > label {
+  cursor: default;
+  color: rgb(111, 190, 68);
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .slider {
+  transform: translateX(0%);
+}
+.tabs input[name=tab-control]:nth-of-type(1):checked ~ .content > article:nth-child(1) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ ul > li:nth-child(2) > label {
+  cursor: default;
+  color: rgb(111, 190, 68);
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .slider {
+  transform: translateX(100%);
+}
+.tabs input[name=tab-control]:nth-of-type(2):checked ~ .content > article:nth-child(2) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ ul > li:nth-child(3) > label {
+  cursor: default;
+  color: rgb(111, 190, 68);
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .slider {
+  transform: translateX(200%);
+}
+.tabs input[name=tab-control]:nth-of-type(3):checked ~ .content > article:nth-child(3) {
+  display: block;
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ ul > li:nth-child(4) > label {
+  cursor: default;
+  color: rgb(111, 190, 68);
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .slider {
+  transform: translateX(300%);
+}
+.tabs input[name=tab-control]:nth-of-type(4):checked ~ .content > article:nth-child(4) {
+  display: block;
+}
+@keyframes content {
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 600px) {
+  .tabs ul li label {
+    border-radius: 5px;
+  }
+  .tabs ul li label span {
+    display: none;
+  }
+  .tabs .slider {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(16, 31, 56);
+  counter-reset: link sectionTitles;
+}
+
+button:focus {
+  outline: none;
+}
+
+h3 {
+  display: flex;
+  align-items: baseline;
+  counter-increment: sectionTitles;
+  margin: 0 0 3rem;
+  width: 100%;
+}
+h3::before {
+  content: "0" counter(sectionTitles) ":";
+  padding: 0 1rem 0 0;
+}
+h3::after {
+  content: "";
+  position: relative;
+  bottom: 0.5rem;
+  flex: 1 1 auto;
+  height: 0.25rem;
+  min-width: 5rem;
+  background: linear-gradient(to right, rgb(171, 188, 219), rgb(16, 31, 56));
+  margin-left: 0.75rem;
+}
+
+main {
+  padding: 0 1rem;
+  margin-bottom: 50rem;
+}
+
+section {
+  min-height: 50rem;
+  padding: 2rem 1rem;
+}
+
+#about, #experience, #projects, #contact {
+  margin: 7rem 0 0 0;
+}/*# sourceMappingURL=main.css.map */

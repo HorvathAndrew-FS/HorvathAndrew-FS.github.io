@@ -1,0 +1,122 @@
+//imported fonts from google and adobe
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Quicksand:wght@300;400;500&family=Roboto+Mono:wght@100;300;400;500&display=swap');
+@import url("https://use.typekit.net/iac0swk.css");
+
+//backup font import in case typekit doesnt work properly
+@font-face {
+  font-family: 'felt-tip-senior';
+  src: url('../scss/fonts/felt-tip/felt-tip-senior.woff2') format('woff2'),
+       url('../scss/fonts/felt-tip/felt-tip-senior.woff') format('woff'),
+       url('../scss/fonts/felt-tip/felt-tip-senior.ttf') format('truetype');
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+}
+a, p, button, div, span {
+  font-size: 1.5rem;
+  color: $text-blue-100;
+}
+h1 {
+    font-family: $font-stack-special;
+    font-size: 6rem;
+    line-height: 0.7;
+    color: $highlight-accent;
+}
+h2 {
+  font-size: 2.5rem;
+  color: $text-blue-200;
+}
+h3 {
+  font-size: 2.25rem;
+  color: $secondary-accent;
+  &::before {
+    font-weight: 500;
+    font-size: 2.15rem;
+    color: $highlight-accent;
+  }
+}
+p {
+  letter-spacing: .13rem;
+}
+
+
+//header and navigation
+.nav-primary-item {
+	& a {
+		text-decoration: none;
+		font-size: 1.6rem;
+		
+		&:hover {
+			color: $button-link-hover;
+		}
+		
+		&::before {
+		color: $highlight-accent;
+		font-size: 1.5rem;
+		}
+	}
+}
+.nav-toggler-custom {
+	color: $highlight-accent;
+}
+.navbar-toggler-icon-custom {
+	font-size: 2.5rem;
+  color: $highlight-accent;
+  &:hover {
+    color: $button-link-hover;
+  }
+}
+.btn-close-nav-secondary {
+	font-size: 2rem;
+	color: $highlight-accent;
+	&:hover {
+		color: $button-link-hover;
+	}
+}
+.nav-item-custom {
+	& a {
+		color: $text-blue-100;
+		font-size: 1.75rem;
+    font-weight: 500;
+		&:hover {
+			color: $button-link-hover;
+		}
+	}
+	&::before {
+		color: $highlight-accent;
+		font-size: 2rem;
+	}
+}
+
+//main greeting section
+.ah-p-main-greeting {
+    color: $secondary-accent;
+}
+
+//main greeting section projects button
+.button-ah-text-front, .button-ah-text-back {
+    text-align: center;
+}
+.button-ah-text-front {
+    color: $highlight-accent;
+}
+.button-ah-text-back {
+    color: $hoover-text-inverse;
+    text-decoration: none;
+}
+
+//about section
+.section-about {
+    & ul {
+      font-size: 1.3rem;
+    }
+    & li i {
+      font-size: 1.2rem;
+      color: $highlight-accent;
+    }
+}
