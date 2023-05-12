@@ -24,7 +24,7 @@ $breakpoints: (
 /* selectors relative to radio inputs */
 $label-selector: "~ ul > li";
 $slider-selector: "~ .slider";
-$content-selector: "~ .content > article";
+$content-selector: "~ .container-content-experience > article";
 
 @mixin tabs(
   $label-selector: $label-selector,
@@ -49,9 +49,9 @@ $content-selector: "~ .content > article";
 }
 
 .tabs {
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0 auto;
-    height: 30rem;
+    height: fit-content;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: .5rem;
     min-width: calc($tab-count * 7rem);
@@ -69,13 +69,12 @@ $content-selector: "~ .content > article";
     display: flex;
     flex-direction: row;
     padding: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    // flex-wrap: wrap;
     
     li {
-    //   flex: 0 1 auto;
-      width: calc(100%/$tab-count);
+      // flex: 1 1 auto;
+      // width: calc(100%/$tab-count);
     //   padding: 0 1rem;
     //   text-align: center;
       
@@ -90,11 +89,7 @@ $content-selector: "~ .content > article";
         
         i {
           transition: all 0.2s ease-in-out;
-        }
-        .fa-microchip {
-            padding-top: 1.2rem;
-        }
-        
+        }   
         &:hover {
             color: $highlight-accent;
         }
@@ -121,7 +116,7 @@ $content-selector: "~ .content > article";
 
   }
   
-  .content {
+  .container-content-experience {
 
     article {
       display: none;
@@ -134,7 +129,7 @@ $content-selector: "~ .content > article";
       }
      
       h4 {
-        color: $accent;
+        color: $secondary-accent;
         
         // &::after {
         //   content: "";

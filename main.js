@@ -5,7 +5,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
 
     let currentScroll = $(this).scrollTop();
-    console.log(currentScroll, 'scrolling')
     /*
       If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
     */
