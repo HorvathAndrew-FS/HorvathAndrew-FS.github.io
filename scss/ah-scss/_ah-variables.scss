@@ -1,0 +1,27 @@
+//font family variables
+// $font-stack: "Roboto Mono", monospace;
+$font-stack: "Quicksand", sans-serif;
+$font-stack-special: "felt-tip-senior", Caveat, sans-serif;
+
+//color palette
+$secondary-accent: rgba(235, 235, 235, 1);
+$highlight-accent: rgba(111, 190, 68, 1);
+$text-blue-100: rgb(171, 188, 219);
+$text-blue-200: rgba(114, 162, 243, 1);
+$bg: rgba(16, 31, 56, 1);
+$shadows: rgba(0, 19, 51, 1);
+
+//nav colors
+$bg-nav: rgba(27, 52, 95, 1);
+$link: rgba(16, 31, 56, 1);
+$button-link-hover: rgba(247, 247, 247, 1);
+
+//3D button
+$hoover-text-inverse: rgba(16, 31, 56, 1);
+
+//breakpoint sizes
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+
+//adding text to check git

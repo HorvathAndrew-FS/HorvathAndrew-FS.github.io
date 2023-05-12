@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/29ca4df66a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script <script src="./main.js" defer></script>
+
+    <title>
+      Andrew Horvath - Web Developer Portfolio | Responsive Web Content and
+      Backend Development
+    </title>
+  </head>
+  <body>
+    <header class="">
+      <nav class="nav-bar-custom navbar is-visible" data-nav-status="toggle">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-logo" href="/">
+            <img
+              class="ah-logo"
+              src="images/ah-logo-icon-portfolio.png"
+              alt="andrew horvath geometric shape logo with a h typography initials"
+            />
+          </a>
+          <!-- primary nav goes here -->
+          <div class="nav-primary d-none d-md-flex">
+            <div class="nav-primary-item">
+              <a href="#about" class="">About</a>
+            </div>
+            <div class="nav-primary-item">
+              <a href="#experience" class="">Life Experience</a>
+            </div>
+            <div class="nav-primary-item">
+              <a href="#projects" class="">Projects</a>
+            </div>
+            <div class="nav-primary-item">
+              <a href="#contact" class="">Reach Out</a>
+            </div>
+          </div>
+
+          <div class="nav-secondary d-md-none">
+            <button
+              class="nav-toggler-custom"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon-custom">
+                <i class="fa-regular fa-bars"></i>
+              </span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <button
+                type="button"
+                class="btn-close-nav-secondary"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark-large"></i>
+              </button>
+
+              <div
+                class="offcanvas-body offcanvas-body-custom d-flex flex-column align-items-center"
+              >
+                <ol class="offcanvas-nav-container m-auto">
+                  <li
+                    class="nav-item nav-item-custom"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    <a class="nav-link" aria-current="page" href="#about"
+                      >About Me</a
+                    >
+                  </li>
+                  <li
+                    class="nav-item nav-item-custom"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    <a class="nav-link" href="#experience">Life Experience</a>
+                  </li>
+                  <li
+                    class="nav-item nav-item-custom"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    <a class="nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li
+                    class="nav-item nav-item-custom"
+                    data-bs-dismiss="offcanvas"
+                  >
+                    <a class="nav-link" href="#contact">Reach Out</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="">
+      <section
+        class="section-main-landing d-flex justify-content-start flex-column align-items-start"
+        id="home"
+      >
+        <p class="ah-p-main-greeting">Hello, I am</p>
+        <h1 class="ah-h1-full-name">Andrew Horvath</h1>
+        <h2>I help develop ideas.</h2>
+        <p>
+          I am a recently graduated Web Developer that focuses on backend
+          development, responsive web content and front-end integration. I am
+          currently looking to add to my skills and portfolio through experience
+          and learning.
+        </p>
+
+        <div class="button-ah-container">
+          <div class="button-ah-perspective">
+            <div class="button-ah-side-2">
+              <span class="button-ah-text-front">Check Out My Projects!</span>
+              <a class="button-ah-text-back" href="#projects">My Projects!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="section-about d-flex justify-content-start flex-column align-items-start"
+      >
+        <h3>About Me</h3>
+        <p>
+          Welcome! My name is Andrew and I really enjoy code and developing
+          objects, components and elements that reside on the internet. My path
+          to the web began back in 2006 when I went out on a limb and enrolled
+          in an Intro to Graphic and Web Design class. To my surprise, I became
+          enamoured with HTML and CSS. I ventured off into the culinary world
+          post graduation as I struggled to find employment in the Web
+          Community, but I never stopped loving code and desired to do more with
+          it.
+        </p>
+        <p>
+          I am now graduating from Full Sail University with a Bachelors in Web
+          Developemnt. I have had the opportunity to learn from some of the
+          greatest contributors in the Web Community and cannot wait to see
+          where my journey into Web Development will take me!
+        </p>
+
+        <p class="mt-4 mb-2">
+          These are some technologies I have knowledge of:
+        </p>
+        <ul class="list-technology row">
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> Javascript
+          </li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> HTML 5
+          </li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> CSS 3
+          </li>
+          <li class="col-6"><i class="fa-solid fa-brackets-curly"></i> SASS</li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> React
+          </li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> Express JS
+          </li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> MySQL
+          </li>
+          <li class="col-6">
+            <i class="fa-solid fa-brackets-curly"></i> MongoDB
+          </li>
+        </ul>
+        <p class="mt-2 mb-2">skills i have aquired:</p>
+        <ul class="list-skills row">
+          <li class="col-6">
+            <i class="fa-sharp fa-solid fa-chevrons-right"></i>Adapatability
+          </li>
+          <li class="col-6">
+            <i class="fa-sharp fa-solid fa-chevrons-right"></i>Management
+          </li>
+          <li class="col-6">
+            <i class="fa-sharp fa-solid fa-chevrons-right"></i>Multi-tasking
+          </li>
+          <li class="col-6">
+            <i class="fa-sharp fa-solid fa-chevrons-right"></i>Organization
+          </li>
+          <li class="col-6">
+            <i class="fa-sharp fa-solid fa-chevrons-right"></i>Client Realtions
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h3>Experience</h3>
+        <div class="tabs">
+          <input type="radio" id="tab1" name="tab-control" checked />
+          <input type="radio" id="tab2" name="tab-control" />
+          <input type="radio" id="tab3" name="tab-control" />
+          <input type="radio" id="tab4" name="tab-control" />
+          <ul>
+            <li title="Apple Store">
+              <label for="tab1" role="button"
+                ><i class="fa-regular fa-box-open"></i
+                ><span>Apple Store</span></label
+              >
+            </li>
+            <li title="Seven Steakhouse">
+              <label for="tab2" role="button"
+                ><i class="fa-light fa-fork-knife"></i
+                ><span>Seven Steakhouse</span></label
+              >
+            </li>
+            <li title="Skyfood Catering">
+              <label for="tab3" role="button"
+                ><i class="fa-duotone fa-truck-plane"></i
+                ><span>Skyfood Catering</span></label
+              >
+            </li>
+            <li title="Urban Communications">
+              <label for="tab4" role="button"
+                ><i class="fa-solid fa-right-left-large"></i></i
+                ><span>Urban Communications</span></label
+              >
+            </li>
+          </ul>
+
+          <div class="slider"><div class="indicator"></div></div>
+          <div class="container-content-experience">
+            <article>
+              <h4>BOH Specialist @ Apple Store - Rosedale</h4>
+                <p class="experience-job-description">
+                I was originally hired as a specialist to interact with users on purchasing devices. It didnt take long for me to become a member of the Visuals Team. At the time, the Visuals Team was a selected group of individuals that were in charge of all the user interactive display devices in the store, front window displays and the wall graphics. After almost a year as a specialist, I transitioned to the BOH team. As a member of the BOH Team, we were in charge of all the devices and repair parts arriving and leaving the store.
+                </p>
+            </article>
+            <article>
+              <h4>Seven Steakhouse</h4>
+              <p class="experience-job-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              quas adipisci a accusantium eius ut voluptatibus ad impedit nulla,
+              ipsa qui. Quasi temporibus eos commodi aliquid impedit amet,
+              similique nulla.
+                </p>
+       
+            </article>
+            <article>
+              <h4>Skyfood Catering</h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              nemo ducimus eius, magnam error quisquam sunt voluptate labore,
+              excepturi numquam! Alias libero optio sed harum debitis! Veniam,
+              quia in eum.
+            </article>
+            <article>
+              <h4>Urban Communications</h4>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              dicta vero rerum? Eaque repudiandae architecto libero
+              reprehenderit aliquam magnam ratione quidem? Nobis doloribus
+              molestiae enim deserunt necessitatibus eaque quidem incidunt.
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h3>Projects</h3>
+        <p>projects will go here</p>
+      </section>
+
+      <section id="contact">
+        <h3>Reach Out</h3>
+        <p>
+          I am presently looking for lucrative employment opportunities. Let me
+          know if you have any leads, my inbox is patiently waiting! If you just
+          wnat to say hi, I like those emails too!
+        </p>
+
+        <a href="mailto:andrew.horvath@me.com">Send Me a message!</a>
+      </section>
+    </main>
+
+    <footer class="d-sm-block mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h4 class="footer-brand">Andrew Horvath | Web Developer</h4>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <ul class="social">
+              <li class="facebook">
+                <a
+                  class="fab fa-facebook-square"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><span class="sr-only">Facebook</span></a
+                >
+              </li>
+              <li class="twitter">
+                <a
+                  class="fab fa-twitter-square"
+                  href="https://twitter.com/?lang=en"
+                  target="_blank"
+                  ><span class="sr-only">Twitter</span></a
+                >
+              </li>
+              <li class="instagram">
+                <a
+                  class="fab fa-instagram-square"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><span class="sr-only">Instagram</span></a
+                >
+              </li>
+              <li class="linkedin">
+                <a
+                  class="fab fa-linkedin"
+                  href="https://www.linkedin.com/home"
+                  target="_blank"
+                  ><span class="sr-only">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+            <p>
+              <a
+                href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Minneapolis, Minnesota</a
+              >
+            </p>
+            <p><a href="tel:6122983939">612.298.3939</a></p>
+            <p>
+              <a href="mailto:andrew.horvath@me.com">Send Me a message!</a>
+            </p>
+          </div>
+          <!--social media-->
+
+          <nav class="nav-footer col-12 col-sm-6 col-lg-4">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    <a class="active-custom" href="index.html">home</a>
+                  </li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="menu.html">menu</a></li>
+                  <li>
+                    <a href="mailto:infor@herbaceousfork.com">contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="#">Nutritional Information</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+                <button
+                  type="button"
+                  class="btn-modal"
+                  data-toggle="modal"
+                  data-target="#signUpModal"
+                >
+                  sign up
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!--row-->
+      </div>
+      <!--container-->
+    </footer>
+  </body>
+</html>
