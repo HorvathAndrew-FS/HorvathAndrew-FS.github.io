@@ -1,0 +1,573 @@
+@import url("https://use.typekit.net/sif5fhl.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600&display=swap");
+
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+$hf-brown-dark: rgba(65, 35, 18, 1);
+$hf-brown-light: rgba(133, 89, 20, 1);
+$hf-crimson: rgba(127, 27, 25, 1);
+$hf-red: rgba(232, 30, 38, 1);
+$hf-orange: rgba(243, 108, 33, 1);
+$hf-yellow: rgba(255, 207, 1, 1);
+$hf-ivory: rgba(237, 235, 218, 1);
+$hf-green-lime: rgba(150, 191, 61, 1);
+$hf-green-kelly: rgba(59, 181, 74, 1);
+$hf-green-grass: rgba(0, 149, 76, 1);
+
+@import "modal-form";
+
+.active-screenshot {
+  color: $hf-orange;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.site-bg {
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../assets/images/brick-bg-sm.jpg");
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -100;
+  }
+}
+
+%button-default {
+  display: inline-block;
+  font: 700 1.6rem "mostra-nuova", "Monserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 2px solid $hf-green-grass;
+  background: none;
+  color: $hf-yellow;
+  width: 11rem;
+  border-radius: 0.25rem;
+  &:hover {
+    background: $hf-orange;
+    color: $hf-yellow;
+    text-decoration: none;
+  }
+}
+
+.btn-ordering {
+  @extend %button-default;
+  border-color: $hf-yellow;
+  width: fit-content;
+  padding: 1rem;
+  &.order-menu-pg {
+    border-color: $hf-crimson;
+    color: $hf-brown-dark;
+    &:hover {
+      color: $hf-yellow;
+    }
+  }
+}
+
+.btn-footer {
+  @extend %button-default;
+  font-size: 1.7rem;
+  width: 12rem;
+}
+
+.btn-cards {
+  @extend %button-default;
+  text-align: center;
+  color: $hf-brown-dark;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+.btn-cards-modal {
+  @extend .btn-modal;
+  color: $hf-brown-dark;
+}
+
+/*navigation mobile-first*/
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: $hf-ivory;
+  border-top: 1px solid $hf-brown-dark;
+}
+
+.logo-desktop {
+  @extend %logo-default;
+  width: 100px;
+}
+
+.nav-text-custom {
+  font-size: 14px;
+}
+
+.icon-size-custom {
+  font-size: 30px;
+}
+
+.nav-link {
+  color: $hf-brown-dark;
+  &:hover {
+    color: $hf-orange;
+    z-index: 1000;
+  }
+}
+
+.svg-link-fix {
+  pointer-events: none;
+}
+
+.active-custom {
+  color: $hf-green-grass;
+}
+
+/* jumbotro customization */
+%logo-default {
+  width: 75px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-mobile {
+  @extend %logo-default;
+  margin: -1rem 0 0 0;
+}
+
+.jumbotron-header-logo {
+  z-index: 1000;
+  height: 100px;
+  width: 100%;
+  padding: 18px;
+  transition: all ease-in-out 0.5s;
+}
+
+.tron-logo-active {
+  position: fixed;
+  background: $hf-ivory;
+  top: 0;
+  left: 0;
+}
+
+.logo-move {
+  position: absolute;
+  transform: translate(calc((100vw / 2) - 5.5rem), 0);
+}
+
+.logo-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.jumbotron {
+  color: $hf-ivory;
+  background-image: url("../assets/images/fresh-tomatoes-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+
+  @include media-breakpoint-up(sm) {
+    background-image: url("../assets/images/vegetables-hero-desktop.jpg");
+    margin: 10rem 0 0 0;
+  }
+
+  &.tron-about {
+    background-image: url("../assets/images/green-peas-about-hero.jpg");
+  }
+  &.tron-menu {
+    background-image: url("../assets/images/krinkled-paper-bg-menu-pg.jpg");
+  }
+}
+
+.container-cta-btn {
+  @include media-breakpoint-up(sm) {
+    margin-left: 12rem;
+  }
+  @include media-breakpoint-up(md) {
+    margin-left: 21rem;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: 33rem;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: 42rem;
+  }
+}
+
+h1 {
+  font-family: "mostra-nuova", "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: $hf-orange;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 4.5rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 6rem;
+  }
+
+  &.about-h1 {
+    margin: 10rem 0 0 0;
+    font-size: 5rem;
+    color: $hf-brown-dark;
+  }
+  &.menu-h1 {
+    margin: 0;
+
+    color: $hf-crimson;
+  }
+}
+
+/* sections and cards */
+%card-box-shadow {
+  box-shadow: 5px 5px 15px 5px $gray-700;
+}
+
+.welcome {
+  background: $hf-ivory;
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 5rem 0 5rem 0;
+  border-radius: 0.5rem;
+  @extend %card-box-shadow;
+
+  h2 {
+    text-align: center;
+    font: bold 4.1rem "mostra-nuova", "Montserrat", sans-serif;
+    color: $hf-crimson;
+    margin-bottom: 1.5rem;
+    &::before {
+      content: "Welcome";
+      text-transform: none;
+      letter-spacing: 0.1rem;
+      display: block;
+      color: rgba(0, 149, 76, 0.15);
+      font: 400 7rem "Kaushan Script", cursive;
+      margin: 0 0 -5rem -1.25rem;
+    }
+  }
+  p {
+    color: $hf-brown-dark;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    span {
+      color: $hf-green-grass;
+    }
+  }
+}
+
+.card {
+  border: none;
+  background-color: $hf-ivory;
+  @extend %card-box-shadow;
+}
+
+.card-body {
+  padding: 2rem;
+  h3 {
+    font: 400 2.5rem "mostra-nuova", "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font: 500 1.6rem "montserrat", sans-serif;
+    letter-spacing: 0.15rem;
+    line-height: 1.5;
+    color: $hf-brown-dark;
+  }
+}
+
+.title-card-1 {
+  color: $hf-green-grass;
+}
+
+.title-card-2 {
+  color: $hf-crimson;
+}
+
+.title-card-3 {
+  color: $hf-orange;
+}
+
+.title-card-4 {
+  color: $hf-red;
+}
+
+/* about page individual sections */
+
+.about {
+  @extend .welcome;
+  margin: 0;
+  min-height: 340px;
+  h2 {
+    &::before {
+      content: "About Us";
+    }
+  }
+}
+
+.about-section {
+  @extend %card-box-shadow;
+  padding: 3rem;
+  background-color: $hf-ivory;
+  color: $hf-brown-dark;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  min-height: 340px;
+}
+
+blockquote {
+  border: none;
+  font-family: "mostra-nuova", "monserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  color: $hf-brown-dark;
+  margin: 8rem 0;
+
+  h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    &::before {
+      content: open-quote;
+      font: 700 25rem "monserrat", sans-serif;
+      color: rgba(127, 27, 25, 0.5);
+      position: absolute;
+      top: 2rem;
+      left: -2rem;
+      z-index: -1;
+    }
+    &::after {
+      content: close-quote;
+      font: 700 25rem "monserrat", sans-serif;
+      color: rgba(127, 27, 25, 0.5);
+      position: absolute;
+      bottom: -2rem;
+      right: 0rem;
+      z-index: -1;
+    }
+  }
+  span {
+    font: 3rem "Kaushan Script", cursive;
+  }
+}
+
+/*menu page formatting*/
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.food-menu {
+  @extend .welcome;
+  max-width: 35rem;
+  h2 {
+    &::before {
+      content: "Our Food";
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    color: $hf-orange;
+    li {
+      margin: 0 0 1rem 2rem;
+    }
+  }
+}
+
+.beet-accent {
+  max-width: 400px;
+  @include media-breakpoint-up(md) {
+    margin-top: -3rem;
+  }
+}
+
+/*menu item hover overlay formatting*/
+.menu-item-container {
+  margin-bottom: 12rem;
+}
+
+.image-container {
+  position: relative;
+  // width: 50%;
+}
+
+.image-menu-item {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $hf-ivory;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.menu-item-description {
+  color: $hf-brown-dark;
+  opacity: 1;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
+  text-align: left;
+  .item-title {
+    font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: $hf-green-grass;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 3rem;
+    }
+  }
+
+  .item-modifier {
+    letter-spacing: 0.3rem;
+    color: $hf-orange;
+  }
+}
+
+.divider-section {
+  max-width: 650px;
+}
+
+.second-food-menu {
+  margin: 5rem 0 0rem 0;
+  font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+
+  h3 {
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $hf-orange;
+    width: fit-content;
+    border-bottom: 3px solid $hf-green-kelly;
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 3rem 0;
+      color: $hf-crimson;
+      p {
+        font: 600 2rem "montserrat", sans-serif;
+        color: $hf-brown-dark;
+        letter-spacing: 0.15rem;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+/*social media icons*/
+.social {
+  padding: 0;
+  margin-top: 0.5rem;
+
+  a {
+    font-size: 3.5rem;
+    color: $hf-ivory;
+    padding: 0;
+    text-decoration: none;
+    &:hover {
+      color: $hf-yellow;
+    }
+  }
+  li {
+    display: inline-block;
+    color: $hf-ivory;
+    margin: 0 5px 0 0;
+  }
+}
+
+/*footer customization*/
+footer {
+  background: $hf-brown-dark;
+  height: auto;
+  padding: 10px 0 30px 0;
+  width: 100%;
+  p {
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    color: $hf-ivory;
+  }
+
+  a {
+    color: $hf-ivory;
+    &:hover {
+      text-decoration: none;
+      color: $hf-green-grass;
+    }
+  }
+}
+
+.footer-brand {
+  font-family: "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: $hf-green-grass;
+}
+
+.nav-footer {
+  letter-spacing: 0.1rem;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer-bottom {
+  margin: 2rem 0 5rem 0;
+  border-top: 1px solid $hf-ivory;
+  padding-top: 2.5rem;
+  padding-bottom: 10px;
+  color: $hf-ivory;
+}

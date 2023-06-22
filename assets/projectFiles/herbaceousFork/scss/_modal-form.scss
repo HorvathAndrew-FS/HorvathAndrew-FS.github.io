@@ -1,0 +1,90 @@
+/* Modal formatting */
+.btn-modal {
+  @extend %button-default;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-modal-form {
+  @extend %button-default;
+  border: 2px solid $hf-yellow;
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.2rem;
+  &:hover {
+    background-color: $hf-green-grass;
+  }
+}
+
+.close {
+  font-size: 5rem;
+  color: $hf-red;
+  &:hover {
+    color: $hf-green-grass;
+  }
+}
+
+.modal-dialog {
+  max-width: 775px;
+  margin-top: 10rem;
+}
+
+.modal-backdrop {
+  background-color: $hf-brown-dark;
+  &.show {
+    opacity: 0.95;
+  }
+}
+
+.modal-header {
+  border: none;
+  h5 {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+.modal-content {
+  background: none;
+  border: none;
+}
+
+.modal-title {
+  font: 700 4rem "montserrat", sans-serif;
+  color: $hf-yellow;
+  text-transform: uppercase;
+}
+
+form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+label {
+  visibility: hidden;
+  position: absolute;
+}
+
+input {
+  width: 100%;
+  padding: 2rem;
+  border: rgba(237, 235, 218, 0.75) 3px solid;
+  margin: 1.25rem 0;
+  background: none;
+  color: $hf-orange;
+  font: 500 1.8rem "montserrat", sans-serif;
+}
+
+::placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: $hf-ivory;
+}
+
+input:focus {
+  // box-shadow: inset 0 1px 3px rgba(65, 35, 18, 0.25), 0 0 10px $hf-orange;
+  outline: $hf-orange;
+  border-color: $hf-orange;
+}

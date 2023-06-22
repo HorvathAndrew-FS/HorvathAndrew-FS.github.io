@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!--prettier-ignore-->
+    <link rel="stylesheet" href='css/bootstrap-grid.css'/>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/0150ba7068.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/hf-main.js" defer></script>
+
+    <title>Herbaceous Fork - Menu</title>
+  </head>
+
+  <body>
+    <div class="site-bg">
+      <header>
+        <!--nav for bottom mobile navigation-->
+        <nav
+          class="
+            navbar navbar-expand
+            justify-content-center
+            text-uppercase
+            fixed-bottom
+            d-sm-none
+          "
+        >
+          <div class="container">
+            <ul class="navbar-nav nav-justified w-100 text-center mt-1">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Home</span>
+                  <object
+                    class="svg-link-fix"
+                    type="image/svg+xml"
+                    data="assets/images/hf_logo_v4.svg"
+                  >
+                    Your browser does not support SVGs
+                  </object>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:6127777777" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Call</span>
+                  <span class="fad fa-mobile-alt icon-size-custom"></span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="menu.html"
+                  class="nav-link d-flex flex-column active-custom"
+                >
+                  <span class="mb-1 nav-text-custom">Menu</span>
+                  <span class="fad fa-utensils-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  class="nav-link d-flex flex-column"
+                >
+                  <span class="mb-1 nav-text-custom">Location</span>
+                  <span class="fad fa-thumbtack icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">About</span>
+                  <span class="fas fa-user-circle icon-size-custom"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--main top navigation-->
+        <nav
+          class="
+            navbar navbar-expand
+            justify-content-center
+            text-uppercase
+            fixed-top
+            d-none d-sm-block
+          "
+        >
+          <div class="container">
+            <div class="p-sm-2">
+              <object
+                data="assets/images/hf_logo_v2.svg"
+                class="logo-desktop"
+              ></object>
+            </div>
+            <ul
+              class="
+                navbar-nav
+                d-flex
+                justify-content-end
+                w-100
+                text-center
+                mt-1
+              "
+            >
+              <li class="nav-item mr-3">
+                <a href="index.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Home</span>
+                  <span class="fad fa-home-lg-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a href="tel:6127777777" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Call</span>
+                  <span class="fad fa-mobile-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a
+                  href="menu.html"
+                  class="nav-link d-flex flex-column active-custom"
+                >
+                  <span class="mb-1 nav-text-custom">Menu</span>
+                  <span class="fad fa-utensils-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  class="nav-link d-flex flex-column"
+                >
+                  <span class="mb-1 nav-text-custom link-fix">Location</span>
+                  <span
+                    class="fad fa-thumbtack icon-size-custom link-fix"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">About</span>
+                  <span class="fad fa-user-circle icon-size-custom"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="jumbotron jumbotron-fluid tron-menu">
+        <div class="container">
+          <div class="jumbotron-header-logo d-flex d-sm-none">
+            <div class="logo-mobile d-sm-none logo-transition">
+              <object
+                data="assets/images/hf_logo_v2.svg"
+                class="d-sm-none"
+              ></object>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="container-cta-menu text-right mt-5 col-6">
+              <h1 class="text-uppercase menu-h1">
+                Herbaceous <br />
+                Fork
+              </h1>
+              <button type="button" class="btn-ordering order-menu-pg mt-4">
+                order online
+              </button>
+            </div>
+            <div class="beet-accent col-6">
+              <img
+                class="img-fluid"
+                src="assets/images/beet-v2.png"
+                alt="cut out of red beet, red and green leafy tops"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="container mb-5">
+        <section class="food-menu mx-auto">
+          <h2>Menu</h2>
+          <ul>
+            <li>VV: Vegan</li>
+            <li>V: Vegetarian</li>
+            <li>VA: Vegan Adaptable</li>
+            <li>GF: Gluten-Free</li>
+            <li>GFA: Gluten-Free Adaptable</li>
+          </ul>
+        </section>
+        <div class="row justify-content-center menu-item-container">
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/avocado-toast-menu-item.jpg"
+                  class="card-img-top"
+                  alt="grilled wheat bread with smashed avocado, pepitas, grape tomatoes and flake salt on top on a black plate with chrome fork and knife"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Avo Toast</div>
+                    <div>
+                      Avocado, Charred Tomatillo Vinaigrette, Cucumbers, Baby
+                      Tomatoes, Radish, Lime, Grilled Cranberry Wheat, Arugula,
+                      Pepitas.
+                      <div class="item-modifier">VV</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/bury-beets-salad-menu-item.jpg"
+                  class="card-img-top"
+                  alt="red beets, baby kale, orange segments, red lentils and goat cheese salad in an ivory bowl"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Bury Beets</div>
+                    <div>
+                      Roasted Beets, Baby Kale, Oranges, Red Lentils, Goat
+                      Cheese, Shaved Fennel, Mint, Chive, Ginger-Champagne
+                      Vinaigrette
+
+                      <div class="item-modifier">V, VA, GF</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/salmon-grilled-menu-item.jpg"
+                  class="card-img-top"
+                  alt="grilled salmon on roasted sweet potatoes and peppers, carrot tahini puree and paprika vinaigrette on top in an ivory bowl"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Slammin Salmon</div>
+                    <div>
+                      Grilled Salmon, Roasted Sweet Potatoes, Peppers, Kale,
+                      Carrot-Tahini Puree, Smoked Paprika Vinaigrette
+                      <div class="item-modifier">GF, VA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/mushroom-burger-menu-item.jpg"
+                  class="card-img-top"
+                  alt="Wild rice and mushroom burger held in a stretched out hand in front of a brick wall"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Boomer Burger</div>
+                    <div>
+                      Wild Rice Mushroom Burger, Arugula, Pickled Red Onion,
+                      Chiles, Sesame Roll, Vegan Garlic Aioli, Carrot-Cucumber
+                      Slaw, Cilantro, Sesame-Soy Vinaigrette
+                      <div class="item-modifier">VV</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/grain-bowl-menu-item.jpg.jpg"
+                  class="card-img-top"
+                  alt="Brown rice and red quinoa grain bowl with edamame, jalapeño, spicy peanuts and pineapple, carrot, turmeric chutney"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Bowl Lotta Love</div>
+                    <div>
+                      Brown Rice, Quinoa, Kale, Peppers, Pineapple-Turmeric
+                      Chutney, Edamame, Jalapeño, Spicy Peanuts, Shaved Brussel
+                      Sprouts
+                      <div class="item-modifier">VV, GF</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="image-container">
+                <img
+                  src="assets/images/food-menu-items/mung-bean-pancake-menu-item.jpg"
+                  class="card-img-top"
+                  alt="white plate with korean mung bean
+            pancakes, carrots and scallions on a wood table"
+                />
+                <div class="image-overlay">
+                  <div class="menu-item-description">
+                    <div class="item-title">Benjamin Bacon</div>
+                    <div>
+                      Mung Bean Pancakes, Maple-Soy Glazed Peterson Farm's Pork
+                      Belly, Bok Choy Kimchi, Gochujang Aioli, Scallions,
+                      Cilantro, Sesame Seed
+                      <div class="item-modifier">GF, VA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider-section m-auto">
+          <img
+            class="img-fluid"
+            src="assets/images/page-section-divider.png"
+            alt="decorative black cursive like flourish"
+          />
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 second-food-menu">
+            <section class="text-center text-sm-left">
+              <h3>Add On</h3>
+              <ul>
+                <li>grilled salmon</li>
+                <li>grilled chicken breast</li>
+                <li>Herbivorous Butcher Smokey Ribs</li>
+                <li>Herbivorous Butcher Grilled Ribeye</li>
+                <li>
+                  Fork Slaw
+                  <p>
+                    Napa Cabbage, Sesame Soy Vinaigrette, Carrots, Cucumber,
+                    Sesame Seeds, Cilantro
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-12 col-sm-6 second-food-menu">
+            <section class="text-center text-sm-left">
+              <h3>beverages</h3>
+              <ul>
+                <li>sparkling water</li>
+                <li>spring water</li>
+                <li>
+                  Herbaceous Fork Cold-Pressed Juices
+                  <p class="mb-4">Carrot, Ginger, Pineapple</p>
+                  <p class="mb-4">
+                    Wheatgrass, Green Apple, Cucumber, Lemon, Cayenne
+                  </p>
+                  <p class="mb-4">Beets, Green Apple, Cucumber, Lemon</p>
+                </li>
+                <li>
+                  Northstar Kombucha
+                  <p>Citra Hop, Lavendar Ginger Cherry Elderberry</p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="d-sm-block">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-12 col-sm-6 col-md-4">
+              <h4 class="footer-brand">Herbaceous Fork</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <ul class="social">
+                <li class="facebook">
+                  <a
+                    class="fab fa-facebook-square"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    ><span class="sr-only">Facebook</span></a
+                  >
+                </li>
+                <li class="twitter">
+                  <a
+                    class="fab fa-twitter-square"
+                    href="https://twitter.com/?lang=en"
+                    target="_blank"
+                    ><span class="sr-only">Twitter</span></a
+                  >
+                </li>
+                <li class="instagram">
+                  <a
+                    class="fab fa-instagram-square"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><span class="sr-only">Instagram</span></a
+                  >
+                </li>
+                <li class="linkedin">
+                  <a
+                    class="fab fa-linkedin"
+                    href="https://www.linkedin.com/home"
+                    target="_blank"
+                    ><span class="sr-only">LinkedIn</span></a
+                  >
+                </li>
+              </ul>
+              <p>
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  7777 MAIN ST NW</a
+                >
+              </p>
+              <p><a href="tel:6127777777">612.777.7777</a></p>
+              <p>
+                <a href="mailto:email@herbaceousfork.com"
+                  >info@herbaceousfork.com</a
+                >
+              </p>
+            </div>
+            <!--social media-->
+
+            <nav class="nav-footer col-12 col-md-4">
+              <div class="row justify-content-start">
+                <div class="col-4 col-sm-6">
+                  <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a class="active-custom" href="#">menu</a></li>
+                    <li>
+                      <a href="mailto:info@herbaceousfork.com">contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-4 col-sm-6">
+                  <ul>
+                    <li><a href="#">Nutritional Information</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-modal"
+                    data-toggle="modal"
+                    data-target="#signUpModal"
+                  >
+                    sign up
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="pull-left copyright">
+              Made for you and your web site by me.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="sign-up-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-up-modal">Join our email list</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div>
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="user-email">Email Address</label>
+                <input
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn-modal-form mr-5">
+                  Submit
+                </button>
+                <button
+                  type="button"
+                  class="btn-modal-form"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

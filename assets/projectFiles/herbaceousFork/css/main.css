@@ -1,0 +1,632 @@
+@import url("https://use.typekit.net/sif5fhl.css");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600&display=swap");
+/* Modal formatting */
+.btn-modal:focus, .btn-cards-modal:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-modal-form {
+  border: 2px solid rgb(255, 207, 1);
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.btn-modal-form:hover {
+  background-color: rgb(0, 149, 76);
+}
+
+.close {
+  font-size: 5rem;
+  color: rgb(232, 30, 38);
+}
+.close:hover {
+  color: rgb(0, 149, 76);
+}
+
+.modal-dialog {
+  max-width: 775px;
+  margin-top: 10rem;
+}
+
+.modal-backdrop {
+  background-color: rgb(65, 35, 18);
+}
+.modal-backdrop.show {
+  opacity: 0.95;
+}
+
+.modal-header {
+  border: none;
+}
+.modal-header h5 {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+}
+
+.modal-title {
+  font: 700 4rem "montserrat", sans-serif;
+  color: rgb(255, 207, 1);
+  text-transform: uppercase;
+}
+
+form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+label {
+  visibility: hidden;
+  position: absolute;
+}
+
+input {
+  width: 100%;
+  padding: 2rem;
+  border: rgba(237, 235, 218, 0.75) 3px solid;
+  margin: 1.25rem 0;
+  background: none;
+  color: rgb(243, 108, 33);
+  font: 500 1.8rem "montserrat", sans-serif;
+}
+
+::placeholder {
+  font: 400 1.8rem "monserrat", sans-serif;
+  text-transform: uppercase;
+  color: rgb(237, 235, 218);
+}
+
+input:focus {
+  outline: rgb(243, 108, 33);
+  border-color: rgb(243, 108, 33);
+}
+
+.active-screenshot {
+  color: rgb(243, 108, 33);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.site-bg {
+  display: block;
+  position: relative;
+}
+.site-bg::after {
+  content: "";
+  background: url("../assets/images/brick-bg-sm.jpg");
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -100;
+}
+
+.btn-cards, .btn-footer, .btn-ordering, .btn-modal, .btn-cards-modal, .btn-modal-form {
+  display: inline-block;
+  font: 700 1.6rem "mostra-nuova", "Monserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 1rem;
+  border: 2px solid rgb(0, 149, 76);
+  background: none;
+  color: rgb(255, 207, 1);
+  width: 11rem;
+  border-radius: 0.25rem;
+}
+.btn-cards:hover, .btn-footer:hover, .btn-ordering:hover, .btn-modal:hover, .btn-cards-modal:hover, .btn-modal-form:hover {
+  background: rgb(243, 108, 33);
+  color: rgb(255, 207, 1);
+  text-decoration: none;
+}
+
+.btn-ordering {
+  border-color: rgb(255, 207, 1);
+  width: fit-content;
+  padding: 1rem;
+}
+.btn-ordering.order-menu-pg {
+  border-color: rgb(127, 27, 25);
+  color: rgb(65, 35, 18);
+}
+.btn-ordering.order-menu-pg:hover {
+  color: rgb(255, 207, 1);
+}
+
+.btn-footer {
+  font-size: 1.7rem;
+  width: 12rem;
+}
+
+.btn-cards {
+  text-align: center;
+  color: rgb(65, 35, 18);
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+}
+
+.btn-cards-modal {
+  color: rgb(65, 35, 18);
+}
+
+/*navigation mobile-first*/
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: rgb(237, 235, 218);
+  border-top: 1px solid rgb(65, 35, 18);
+}
+
+.logo-desktop {
+  width: 100px;
+}
+
+.nav-text-custom {
+  font-size: 14px;
+}
+
+.icon-size-custom {
+  font-size: 30px;
+}
+
+.nav-link {
+  color: rgb(65, 35, 18);
+}
+.nav-link:hover {
+  color: rgb(243, 108, 33);
+  z-index: 1000;
+}
+
+.svg-link-fix {
+  pointer-events: none;
+}
+
+.active-custom {
+  color: rgb(0, 149, 76);
+}
+
+/* jumbotro customization */
+.logo-mobile, .logo-desktop {
+  width: 75px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-mobile {
+  margin: -1rem 0 0 0;
+}
+
+.jumbotron-header-logo {
+  z-index: 1000;
+  height: 100px;
+  width: 100%;
+  padding: 18px;
+  transition: all ease-in-out 0.5s;
+}
+
+.tron-logo-active {
+  position: fixed;
+  background: rgb(237, 235, 218);
+  top: 0;
+  left: 0;
+}
+
+.logo-move {
+  position: absolute;
+  transform: translate(calc(50vw - 5.5rem), 0);
+}
+
+.logo-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+.jumbotron {
+  color: rgb(237, 235, 218);
+  background-image: url("../assets/images/fresh-tomatoes-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+}
+@media (min-width: 576px) {
+  .jumbotron {
+    background-image: url("../assets/images/vegetables-hero-desktop.jpg");
+    margin: 10rem 0 0 0;
+  }
+}
+.jumbotron.tron-about {
+  background-image: url("../assets/images/green-peas-about-hero.jpg");
+}
+.jumbotron.tron-menu {
+  background-image: url("../assets/images/krinkled-paper-bg-menu-pg.jpg");
+}
+
+@media (min-width: 576px) {
+  .container-cta-btn {
+    margin-left: 12rem;
+  }
+}
+@media (min-width: 768px) {
+  .container-cta-btn {
+    margin-left: 21rem;
+  }
+}
+@media (min-width: 992px) {
+  .container-cta-btn {
+    margin-left: 33rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container-cta-btn {
+    margin-left: 42rem;
+  }
+}
+
+h1 {
+  font-family: "mostra-nuova", "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(243, 108, 33);
+}
+@media (min-width: 576px) {
+  h1 {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+h1.about-h1 {
+  margin: 10rem 0 0 0;
+  font-size: 5rem;
+  color: rgb(65, 35, 18);
+}
+h1.menu-h1 {
+  margin: 0;
+  color: rgb(127, 27, 25);
+}
+
+/* sections and cards */
+.about-section, .card, .welcome, .food-menu, .about {
+  box-shadow: 5px 5px 15px 5px #495057;
+}
+
+.welcome, .food-menu, .about {
+  background: rgb(237, 235, 218);
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 5rem 0 5rem 0;
+  border-radius: 0.5rem;
+}
+.welcome h2, .food-menu h2, .about h2 {
+  text-align: center;
+  font: bold 4.1rem "mostra-nuova", "Montserrat", sans-serif;
+  color: rgb(127, 27, 25);
+  margin-bottom: 1.5rem;
+}
+.welcome h2::before, .food-menu h2::before, .about h2::before {
+  content: "Welcome";
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  display: block;
+  color: rgba(0, 149, 76, 0.15);
+  font: 400 7rem "Kaushan Script", cursive;
+  margin: 0 0 -5rem -1.25rem;
+}
+.welcome p, .food-menu p, .about p {
+  color: rgb(65, 35, 18);
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+.welcome p span, .food-menu p span, .about p span {
+  color: rgb(0, 149, 76);
+}
+
+.card {
+  border: none;
+  background-color: rgb(237, 235, 218);
+}
+
+.card-body {
+  padding: 2rem;
+}
+.card-body h3 {
+  font: 400 2.5rem "mostra-nuova", "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.card-body p {
+  font: 500 1.6rem "montserrat", sans-serif;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  color: rgb(65, 35, 18);
+}
+
+.title-card-1 {
+  color: rgb(0, 149, 76);
+}
+
+.title-card-2 {
+  color: rgb(127, 27, 25);
+}
+
+.title-card-3 {
+  color: rgb(243, 108, 33);
+}
+
+.title-card-4 {
+  color: rgb(232, 30, 38);
+}
+
+/* about page individual sections */
+.about {
+  margin: 0;
+  min-height: 340px;
+}
+.about h2::before {
+  content: "About Us";
+}
+
+.about-section {
+  padding: 3rem;
+  background-color: rgb(237, 235, 218);
+  color: rgb(65, 35, 18);
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  min-height: 340px;
+}
+
+blockquote {
+  border: none;
+  font-family: "mostra-nuova", "monserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  color: rgb(65, 35, 18);
+  margin: 8rem 0;
+}
+blockquote h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+blockquote h3::before {
+  content: open-quote;
+  font: 700 25rem "monserrat", sans-serif;
+  color: rgba(127, 27, 25, 0.5);
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+  z-index: -1;
+}
+blockquote h3::after {
+  content: close-quote;
+  font: 700 25rem "monserrat", sans-serif;
+  color: rgba(127, 27, 25, 0.5);
+  position: absolute;
+  bottom: -2rem;
+  right: 0rem;
+  z-index: -1;
+}
+blockquote span {
+  font: 3rem "Kaushan Script", cursive;
+}
+
+/*menu page formatting*/
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.food-menu {
+  max-width: 35rem;
+}
+.food-menu h2::before {
+  content: "Our Food";
+}
+.food-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5rem;
+  color: rgb(243, 108, 33);
+}
+.food-menu ul li {
+  margin: 0 0 1rem 2rem;
+}
+
+.beet-accent {
+  max-width: 400px;
+}
+@media (min-width: 768px) {
+  .beet-accent {
+    margin-top: -3rem;
+  }
+}
+
+/*menu item hover overlay formatting*/
+.menu-item-container {
+  margin-bottom: 12rem;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-menu-item {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(237, 235, 218);
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.menu-item-description {
+  color: rgb(65, 35, 18);
+  opacity: 1;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-40%, -50%);
+  text-align: left;
+}
+.menu-item-description .item-title {
+  font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+  color: rgb(0, 149, 76);
+}
+@media (min-width: 768px) {
+  .menu-item-description .item-title {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .menu-item-description .item-title {
+    font-size: 3rem;
+  }
+}
+.menu-item-description .item-modifier {
+  letter-spacing: 0.3rem;
+  color: rgb(243, 108, 33);
+}
+
+.divider-section {
+  max-width: 650px;
+}
+
+.second-food-menu {
+  margin: 5rem 0 0rem 0;
+  font: 700 2.5rem "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.second-food-menu h3 {
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(243, 108, 33);
+  width: fit-content;
+  border-bottom: 3px solid rgb(59, 181, 74);
+}
+@media (min-width: 576px) {
+  .second-food-menu h3 {
+    margin: 0;
+  }
+}
+.second-food-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.second-food-menu ul li {
+  margin: 3rem 0;
+  color: rgb(127, 27, 25);
+}
+.second-food-menu ul li p {
+  font: 600 2rem "montserrat", sans-serif;
+  color: rgb(65, 35, 18);
+  letter-spacing: 0.15rem;
+  text-transform: none;
+}
+
+/*social media icons*/
+.social {
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.social a {
+  font-size: 3.5rem;
+  color: rgb(237, 235, 218);
+  padding: 0;
+  text-decoration: none;
+}
+.social a:hover {
+  color: rgb(255, 207, 1);
+}
+.social li {
+  display: inline-block;
+  color: rgb(237, 235, 218);
+  margin: 0 5px 0 0;
+}
+
+/*footer customization*/
+footer {
+  background: rgb(65, 35, 18);
+  height: auto;
+  padding: 10px 0 30px 0;
+  width: 100%;
+}
+footer p {
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  color: rgb(237, 235, 218);
+}
+footer a {
+  color: rgb(237, 235, 218);
+}
+footer a:hover {
+  text-decoration: none;
+  color: rgb(0, 149, 76);
+}
+
+.footer-brand {
+  font-family: "mostra-nuova", "montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: rgb(0, 149, 76);
+}
+
+.nav-footer {
+  letter-spacing: 0.1rem;
+}
+.nav-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.nav-footer li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  margin: 2rem 0 5rem 0;
+  border-top: 1px solid rgb(237, 235, 218);
+  padding-top: 2.5rem;
+  padding-bottom: 10px;
+  color: rgb(237, 235, 218);
+}/*# sourceMappingURL=main.css.map */

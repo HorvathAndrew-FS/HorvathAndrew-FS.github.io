@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!--prettier-ignore-->
+    <link rel="stylesheet" href='css/bootstrap-grid.css'/>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/0150ba7068.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/hf-main.js" defer></script>
+
+    <title>Herbaceous Fork</title>
+  </head>
+
+  <body>
+    <div class="site-bg">
+      <header>
+        <!--nav for bottom mobile navigation-->
+        <nav
+          class="navbar navbar-expand justify-content-center text-uppercase fixed-bottom d-sm-none"
+        >
+          <div class="container">
+            <ul class="navbar-nav nav-justified w-100 text-center mt-1">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link d-flex flex-column active-custom"
+                >
+                  <span class="mb-1 nav-text-custom">Home</span>
+                  <object
+                    class="svg-link-fix"
+                    type="image/svg+xml"
+                    data="assets/images/hf_logo_v4.svg"
+                  >
+                    Your browser does not support SVGs
+                  </object>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:6127777777" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Call</span>
+                  <span class="fad fa-mobile-alt icon-size-custom"></span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="menu.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom active-screenshot"
+                    >Menu</span
+                  >
+                  <span
+                    class="fad fa-utensils-alt icon-size-custom active-screenshot"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  class="nav-link d-flex flex-column"
+                >
+                  <span class="mb-1 nav-text-custom">Location</span>
+                  <span class="fad fa-thumbtack icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">About</span>
+                  <span class="fas fa-user-circle icon-size-custom"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--main top navigation-->
+        <nav
+          class="navbar navbar-expand justify-content-center text-uppercase fixed-top d-none d-sm-block"
+        >
+          <div class="container">
+            <div class="p-sm-2">
+              <object
+                data="assets/images/hf_logo_v2.svg"
+                class="logo-desktop"
+              ></object>
+            </div>
+            <ul
+              class="navbar-nav d-flex justify-content-end w-100 text-center mt-1"
+            >
+              <li class="nav-item mr-3">
+                <a
+                  href="index.html"
+                  class="nav-link d-flex flex-column active-custom"
+                >
+                  <span class="mb-1 nav-text-custom">Home</span>
+                  <span class="fad fa-home-lg-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a href="tel:6127777777" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Call</span>
+                  <span class="fad fa-mobile-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a href="menu.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">Menu</span>
+                  <span class="fad fa-utensils-alt icon-size-custom"></span>
+                </a>
+              </li>
+              <li class="nav-item mr-2">
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  class="nav-link d-flex flex-column"
+                >
+                  <span class="mb-1 nav-text-custom link-fix">Location</span>
+                  <span
+                    class="fad fa-thumbtack icon-size-custom link-fix"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link d-flex flex-column">
+                  <span class="mb-1 nav-text-custom">About</span>
+                  <span class="fad fa-user-circle icon-size-custom"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="jumbotron-header-logo d-flex d-sm-none">
+            <div class="logo-mobile d-sm-none logo-transition">
+              <object
+                data="assets/images/hf_logo_v2.svg"
+                class="d-sm-none"
+              ></object>
+            </div>
+          </div>
+          <div class="container-cta-btn">
+            <h1 class="text-uppercase">
+              Everyday Vegetables. <br />
+              Re-Imagined.
+            </h1>
+            <button type="button" class="btn-ordering mt-2">
+              order online
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <main class="container">
+        <section class="welcome">
+          <h2>Herbaceous Fork</h2>
+          <p>
+            Welcome to <span id="hf-welcome-name">Herbaceous Fork</span>. We
+            feature a healthy, vegetable-focused menu. Most of our menu items
+            are plant-based and high in nutrients, with minimal use of dairy and
+            proteins. We are here to showcase local farmers and their vegetables
+            in as many ways as we can imagine.
+          </p>
+        </section>
+
+        <div class="row">
+          <div class="col-12 col-md-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/mung-bean-pancakes-card-1.jpg"
+                class="card-img-top"
+                alt="white plate with korean mung bean
+            pancakes, carrots and scallions on a wood table"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-1">our commitment</h3>
+                <p class="card-text">
+                  It is Chef Michael's ability to highlight everyday vegetables
+                  and re-imagine their versatility that separates us from other
+                  plant-based destinations.
+                </p>
+                <a href="menu.html" class="btn-cards">menu</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/spices-5ramekins-card-2.jpg"
+                class="card-img-top"
+                alt="four bowls of different vegetable purees. Broccoli, squash, mushroom, red beets."
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-2">stay connected</h3>
+                <p class="card-text">
+                  Connect with us on social media! We are on Facebook, Twitter,
+                  Instagram and LinkedIn. Direct links are at the bottom of the
+                  page. We also send out a weekly email with specials and
+                  upcoming events! Use the sign up button here or on our about
+                  page!!
+                </p>
+                <button
+                  type="button"
+                  class="btn-cards-modal"
+                  data-toggle="modal"
+                  data-target="#signUpModal"
+                >
+                  sign up
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/kitchen-bar-card-3.jpg"
+                class="card-img-top"
+                alt="bar and kitchen photo from perspective in the dining room"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-3">lets party</h3>
+                <p class="card-text">
+                  Feel good about the food you're ordering. Don't hesitate to
+                  call us for any advice. We're here to help you with your next
+                  Event!
+                </p>
+                <a href="mailto:info@herbaceousfork.com" class="btn-cards"
+                  >contact</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-md-6 mb-5">
+            <section class="card h-100">
+              <img
+                src="assets/images/salmon-grilled-card-4-v2.jpg"
+                class="card-img-top"
+                alt="grilled salmon with carrot puree, roasted sweet potatoes and peppers"
+              />
+              <div class="card-body">
+                <h3 class="card-title title-card-4">our vision</h3>
+                <p class="card-text">
+                  We are committed to using the best available, local vegetables
+                  and products. Cooking within the season is what we do best.
+                </p>
+                <a href="about.html" class="btn-cards">about</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer class="d-sm-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <h4 class="footer-brand">Herbaceous Fork</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <ul class="social">
+                <li class="facebook">
+                  <a
+                    class="fab fa-facebook-square"
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    ><span class="sr-only">Facebook</span></a
+                  >
+                </li>
+                <li class="twitter">
+                  <a
+                    class="fab fa-twitter-square"
+                    href="https://twitter.com/?lang=en"
+                    target="_blank"
+                    ><span class="sr-only">Twitter</span></a
+                  >
+                </li>
+                <li class="instagram">
+                  <a
+                    class="fab fa-instagram-square"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><span class="sr-only">Instagram</span></a
+                  >
+                </li>
+                <li class="linkedin">
+                  <a
+                    class="fab fa-linkedin"
+                    href="https://www.linkedin.com/home"
+                    target="_blank"
+                    ><span class="sr-only">LinkedIn</span></a
+                  >
+                </li>
+              </ul>
+              <p>
+                <a
+                  href="https://goo.gl/maps/K1Pi9h7X6hue4gdY9"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  7777 MAIN ST NW</a
+                >
+              </p>
+              <p><a href="tel:6127777777">612.777.7777</a></p>
+              <p>
+                <a href="mailto:email@herbaceousfork.com"
+                  >email@herbaceousfork.com</a
+                >
+              </p>
+            </div>
+            <!--social media-->
+
+            <nav class="nav-footer col-12 col-sm-6 col-lg-4">
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li><a class="active-custom" href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li>
+                      <a href="mailto:infor@herbaceousfork.com">contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li><a href="#">Nutritional Information</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-modal"
+                    data-toggle="modal"
+                    data-target="#signUpModal"
+                  >
+                    sign up
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!--row-->
+        </div>
+        <!--container-->
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="pull-left copyright">
+              Made for you and your web site by me.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="sign-up-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sign-up-modal">Join our email list</h5>
+          </div>
+          <div class="modal-body">
+            <form class="">
+              <div>
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="user-email">Email Address</label>
+                <input
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn-modal-form mr-5">
+                  Submit
+                </button>
+                <button
+                  type="button"
+                  class="btn-modal-form"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
