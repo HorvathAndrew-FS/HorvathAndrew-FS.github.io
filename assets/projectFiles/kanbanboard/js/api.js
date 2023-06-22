@@ -33,7 +33,7 @@ class API {
       method: "GET",
     };
 
-    displayLoading();
+    // displayLoading();
 
     fetch(url, optionGet)
       .then((response) => {
