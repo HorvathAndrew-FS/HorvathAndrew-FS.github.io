@@ -34,6 +34,7 @@ class API {
     };
 
     // displayLoading();
+    //seriously I commented it out already stupid browser!
 
     fetch(url, optionGet)
       .then((response) => {
